@@ -58,7 +58,7 @@ const animBall = () => {
     ball.position.x + ball.radius <= player1.position.x + player1.width / 2
   ) {
     if (
-      ball.position.y > player1.position.y ||
+      ball.position.y > player1.position.y &&
       ball.position.y < player1.position.y + 100
     ) {
       ball.changeDirectionX();
@@ -70,7 +70,7 @@ const animBall = () => {
     ball.position.x + ball.radius >= player2.position.x
   ) {
     if (
-      ball.position.y > player2.position.y ||
+      ball.position.y > player2.position.y &&
       ball.position.y < player1.position.y + 100
     ) {
       ball.changeDirectionX();
